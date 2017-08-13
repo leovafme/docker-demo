@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    build: ./php
+    volumes:
+    - ./php/www:/var/www/site
+    ports:
+    - 5001:80
